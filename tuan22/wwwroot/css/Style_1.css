@@ -1,0 +1,129 @@
+﻿@charset "utf-8"; /* CSS Document */
+
+@font-face {
+    font-family: Raleway-Regular;
+    src: url("../Fonts/Raleway-Regular.ttf");
+}
+
+@font-face {
+    font-family: Raleway-Bold;
+    src: url("../Fonts/Raleway-Bold.ttf");
+}
+
+/* Basic page */
+body {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    background: #f7f8fa;
+    color: #333;
+    margin: 0;
+}
+
+/* Header / Navbar */
+.site-header {
+    background: #fff;
+    border-bottom: 1px solid #e6e9ec;
+    box-shadow: 0 1px 0 rgba(0,0,0,0.02);
+}
+.navbar-brand .brand-logo {
+    height: 42px;
+}
+.navbar-nav .nav-link {
+    padding: .6rem .9rem;
+    color: #555;
+    font-weight: 600;
+    letter-spacing: .6px;
+    font-size: .9rem;
+}
+.navbar-nav .btn-active {
+    background: #ef3b3b;
+    color: #fff !important;
+    border-radius: 3px;
+    padding: .45rem .85rem;
+}
+.navbar-toggler {
+    border: none;
+}
+
+/* Slider container (centered and wide) */
+.slider-wrap {
+    max-width: 980px;
+    margin: 30px auto;
+}
+#slider .carousel-item img {
+    height: 420px;
+    object-fit: cover;
+    width: 100%;
+    border-radius: 2px;
+}
+.carousel-indicators li {
+    background: #ddd;
+}
+.carousel-indicators .active {
+    background: #ef3b3b;
+}
+
+/* About section */
+.about-section {
+    padding: 40px 0 80px;
+    background: #fff;
+}
+.title p {
+    text-align: center;
+    font-size: 1.75rem;
+    font-weight: 700;
+    margin: 0 0 30px;
+    color: #222;
+}
+.about-row { margin-top: 20px; }
+.about-img img {
+    display: block;
+    max-width: 420px;
+    width: 100%;
+    height: auto;
+    margin: 0;              /* remove auto centering on desktop */
+    float: left;           /* place to left of text */
+    padding-right: 30px;   /* spacing between image and content */
+}
+.about-content h3 {
+    font-size: 1.25rem;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+.about-content .lead {
+    color: #6b6b6b;
+    margin-bottom: 12px;
+}
+.btn-read {
+    margin-top: 12px;
+    border-radius: 3px;
+    font-weight: 600;
+}
+
+/* services */
+.section-sep {
+    margin: 28px auto;
+    width: 60%;
+    border: 0;
+    border-top: 1px solid #e6e9ec;
+}
+.services-row { margin-top: 20px; }
+.service {
+    padding: 18px;
+}
+.service-icon {
+    font-size: 36px;
+    color: #2fa6df;
+    margin-bottom: 10px;
+}
+
+/* Responsive tweaks */
+@media (max-width: 767px) {
+    .slider-wrap { margin: 18px; }
+    .about-img img {
+        float: none;
+        margin: 0 auto 18px;
+        display: block;
+        padding-right: 0;
+    }
+    .navbar-nav .nav-link { padding: .4rem .6rem; font-size: .85rem; }
+}
